@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css?family=Sanchez');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Sanchez', serif;
+	font-size: 16px;
+	color: #534741;
+	background-color: #fff;
+}
+
+header {
+	margin: 50px 50px;
+	border: 1px black solid;
+}
+
+nav {
+	text-align: right;
+	margin-bottom: 20px;
+	float: right;
+	border: 1px solid black;
+}
+
+nav a {
+	color: #534741;
+	margin-right: 25px;
+	font-size: 1.5em;
+	text-transform: lowercase;
+	padding: 3px;
+	text-align: right;
+}
+
+nav a:hover {
+	border-bottom: 3px solid orange;
+	color: orange;
+}
+
+a {
+	text-decoration: none;
+	color: orange;
+}	
+
+section {
+	width: 100%;
+	border: 1px solid black;
+}
+
+footer {
+	background-color: #534741;
+	padding: 50px;
+	width: 100%;
+	height: 150px;
+	color: #fff;
+	font-size: 14px;
+	letter-spacing: 1px;
+	text-align: right;
+	border: 1px solid black;
+	clear: both;
+}
+
+h1 { /*	header overlay on image*/
+	font-size: 3em;
+	color: white;
+	font-weight: 100;
+	background-color: rgba(53,47,41,.5);
+	text-align: left;
+	margin: auto 25px; /*auto centers, 25px is the width*/
+	padding: 25px;
+}
+
+h2 { /*	underlined subheads*/
+	font-family: 'Sanchez', serif;
+	font-size: 1.5em;
+	font-weight: 900;
+	text-transform: uppercase;
+	text-decoration: underline;
+	letter-spacing: 5px;
+	margin-bottom: .75em;
+/*	padding-top: 25px;
+*/}
+
+h3 { /*	client categories*/
+	font-family: 'Raleway', sans-serif;
+	font-size: 1em;
+	font-weight: 900;
+	padding-bottom: 1em;
+}
+
+h4 {
+	font-family: 'Sanchez', serif;
+	font-size: 2em;
+
+}
+
+li {
+	font-size: 14px;
+	list-style: none;
+	line-height: 1.75em;
+}
+
+#logotype {
+	font-size: 1.5em;
+	font-weight: 900;
+	letter-spacing: 5px;
+	border: 1px solid black;
+	float: left; 
+
+}
+
+#hero {
+/*	background: url(http://www.koolgirlposse.com/wp-content/uploads/2017/10/Wonderhood_PetPlace_Back-1024x682.jpg) no-repeat center center scroll; */	
+	background: url(http://www.koolgirlposse.com/wp-content/uploads/2014/09/SpyglassSign2.jpg) no-repeat center center scroll;
+	background-size: cover;
+	height: 40em;
+	background-color: #fff;
+}
+
+.descriptiontext {
+	font-family: 'Raleway', sans-serif;
+	line-height: 1.5em;
+	padding-bottom: .5em;
+}
+
+.clients {
+/*	width: 33%;
+*/	margin-bottom: 20px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid;
+
+}
+
+.message {
+	font-size: 2em;
+	font-weight: 100;
+	line-height: 1.5em;
+	width: 75%;
+}
+
+.wordbg {
+	background-color: #F5F9F8;
+	padding: 50px;
+}
+
+.imagebg {
+	background-color: #E9E8E1;
+	padding: 50px;
+}
+
+.projectbg {
+	background-color: #EFE3D1;
+	padding: 50px;
+}
+
+.thumb {
+	width: 20%;
+	padding-right: 25px;
+	padding-bottom: 25px;
+}
+
+.ptitle {
+	width: 33%;
+	border: 1px sold black;
+	float: left;
+}
+
+.pimage {
+	width: 67%;
+/*	height: 50%;*/
+/*	text-align: left;*/
+	float: right;	
+}
+
+.pdescrip {
+	width: 100%;
+	padding-left: 33%;
+	padding-top: 25px;
+	clear: both;
+}
+
+.projectimg {
+	width: 100%;
+}
+
+.socialmediaicons {
+	width: 25px;
+	height: 25px;
+	float: left;
+}
+
+.col1 {
+	width: 33%;
+	float: left;
+}
+
+.col2 {
+	width: 33%;
+	float: left;
+}
+
+.col3 {
+	width: 34%;
+	float: right;
+}
