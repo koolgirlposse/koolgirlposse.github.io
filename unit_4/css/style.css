@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Sanchez');
-@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
 @import url('https://fonts.googleapis.com/css?family=Raleway');
-
 
 
 * {
 	padding: 0;
 	margin: 0;
-}
+/*	box-sizing: border-box;
+*/}
 
 body {
 	font-family: 'Sanchez', serif;
@@ -17,23 +16,30 @@ body {
 }
 
 header {
-	margin-left: 50px;
-	margin-top: 25px;
+	margin: 50px 50px;
+	border: 1px black solid;
+/*	margin: 25px 50px;*/
 }
 
 nav {
 	text-align: right;
-	margin-bottom: 20px; 
+	margin-bottom: 20px;
+	float: right;
+	border: 1px solid black;
 }
 
 nav a {
 	color: #534741;
-	margin-right: 50px;
+	margin-right: 25px;
 	font-size: 1.5em;
 	text-transform: lowercase;
-	padding: 5px;
-/*	background-color: white;
-*/	border-bottom: 3px solid orange;
+	padding: 3px;
+	text-align: right;
+}
+
+nav a:hover {
+	border-bottom: 3px solid orange;
+	color: orange;
 }
 
 a {
@@ -42,43 +48,43 @@ a {
 }	
 
 section {
-	padding: 50px;
+	width: 100%;
+	border: 1px solid black;
 }
 
 footer {
 	background-color: #534741;
 	padding: 20px;
-	margin-bottom: 10px;
+/*	margin-bottom: 10px;*/
 	color: #fff;
-	font-weight: 200;
+/*	font-weight: 200;*/
 	font-size: 14px;
 	text-align: right;
+	border: 1px solid black;
 }
 
-h1 {
-/*	header overlay on image*/
+h1 { /*	header overlay on image*/
 	font-size: 3em;
 	color: white;
 	font-weight: 100;
-	background-color: rgba(53,47,41,.25);
+	background-color: rgba(53,47,41,.5);
 	text-align: left;
-	padding: 5px 20px;
+	margin: auto 25px; /*auto centers, 25px is the width*/
+	padding: 25px;
 }
 
-h2 {
-/*	underlined subheads*/
+h2 { /*	underlined subheads*/
 	font-family: 'Sanchez', serif;
 	font-size: 1.5em;
 	font-weight: 900;
 	text-transform: uppercase;
 	text-decoration: underline;
-	letter-spacing: 5px;/*
-	border-bottom: 5px solid #000;*/
-	margin-bottom: 12px;
-}
+	letter-spacing: 5px;
+	margin-bottom: .75em;
+/*	padding-top: 25px;
+*/}
 
-h3 {
-/*	client categories*/
+h3 { /*	client categories*/
 	font-family: 'Raleway', sans-serif;
 	font-size: 1em;
 	font-weight: 900;
@@ -91,45 +97,58 @@ li {
 	line-height: 1.75em;
 }
 
-hr {
-	width: 50%;
-	border: none;
-	height: 1px;
-	background-color: #bbb;
-	margin: 1em 0;
-}
-
 #logotype {
 	font-size: 1.5em;
 	font-weight: 900;
 	letter-spacing: 5px;
+	border: 1px solid black;
+	float: left; 
+
 }
 
 #hero {
 /*	background: url(http://www.koolgirlposse.com/wp-content/uploads/2017/10/Wonderhood_PetPlace_Back-1024x682.jpg) no-repeat center center scroll; */	
 	background: url(http://www.koolgirlposse.com/wp-content/uploads/2014/09/SpyglassSign2.jpg) no-repeat center center scroll;
-	background-size: 100%;
+	background-size: cover;
 	height: 40em;
 	background-color: #fff;
+}
+
+.clients {
+	width: 50%;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid;
 }
 
 .message {
 	font-size: 2em;
 	font-weight: 100;
 	line-height: 1.5em;
-	width: 30em ;
+/*	width: 30em ;*/
+	width: 75%;
 }
 
 .wordbg {
 	background-color: #F5F9F8;
+	padding: 50px;
 }
 
 .imagebg {
 	background-color: #E9E8E1;
+	padding: 50px;
+}
+
+.projectbg {
+	background-color: #E9E8E1;
+	padding: 50px;	
 }
 
 .thumb {
-	width: 200px;
-	height: 200px;
-	margin: 10px;
+	width: 20%;
+/*	height: 200px;
+*/	padding-right: 25px;
+	padding-bottom: 25px;
+
+/*	margin: 10px;*/
 }

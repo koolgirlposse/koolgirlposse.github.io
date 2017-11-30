@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Sanchez');
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
 
 
 * {
@@ -67,8 +67,8 @@ footer {
 h1 { /*	header overlay on image*/
 	font-size: 3em;
 	color: white;
-	font-weight: 100;
-	background-color: rgba(53,47,41,.5);
+/*	font-weight: 100;
+*/	background-color: rgba(53,47,41,.5);
 	text-align: left;
 	margin: auto 25px; /*auto centers, 25px is the width*/
 	padding: 25px;
@@ -77,8 +77,8 @@ h1 { /*	header overlay on image*/
 h2 { /*	underlined subheads*/
 	font-family: 'Sanchez', serif;
 	font-size: 1.5em;
-	font-weight: 900;
-	text-transform: uppercase;
+/*	font-weight: 900;
+*/	text-transform: uppercase;
 	text-decoration: underline;
 	letter-spacing: 5px;
 	margin-bottom: .75em;
@@ -88,14 +88,14 @@ h2 { /*	underlined subheads*/
 h3 { /*	client categories*/
 	font-family: 'Raleway', sans-serif;
 	font-size: 1em;
-	font-weight: 900;
+	font-weight: 400;
 	padding-bottom: 1em;
 }
 
 h4 {
-	font-family: 'Sanchez', serif;
-	font-size: 2em;
-
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.5em;
+	font-weight: 300;
 }
 
 li {
@@ -206,4 +206,14 @@ li {
 .col3 {
 	width: 34%;
 	float: right;
+}
+
+.clearfix: after {
+	display: block;
+	content: " ";
+	clear: both;
+
+	font-size: 0;
+	visibility: hidden;
+	height: 0;
 }
