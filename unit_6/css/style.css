@@ -18,13 +18,13 @@ body {
 
 header {
 	margin: 50px 50px;
-	border: 1px black solid;
+/*	border: 1px black solid;*/
 }
 
 nav {
 	text-align: right;
 	float: right;
-	border: 1px solid black;
+/*	border: 1px solid black;*/
 }
 
 nav a {
@@ -46,9 +46,15 @@ a {
 	color: orange;
 }	
 
+div {
+/*	border: 1px solid black;*/
+	text-align: left;
+}
+
 section {
 	width: 100%;
-	border: 1px solid black;
+/*	border: 1px solid black;
+*/
 }
 
 footer {
@@ -60,7 +66,7 @@ footer {
 	font-size: 14px;
 	letter-spacing: 1px;
 	text-align: right;
-	border: 1px solid black;
+/*	border: 1px solid black;*/
 	clear: both;
 }
 
@@ -77,17 +83,17 @@ h2 { /*	underlined subheads*/
 	font-family: 'Sanchez', serif;
 	font-size: 1.5em;
 	text-transform: uppercase;
-/*	text-decoration: underline;
-*/	letter-spacing: 5px;
+	letter-spacing: 5px;
 	margin-bottom: .75em;
-	border-bottom: 1px solid black; /*how do i get the width equal to line length?*/
+	border-bottom: 3px solid #534741;
+	width: max-content; /*how do i get the width equal to line length?*/
 }
 
 h3 { /*	client categories*/
 	font-family: 'Raleway', sans-serif;
 	font-size: 1em;
 	font-weight: 800;
-	padding: 1em 0;
+	padding-bottom: 10px;
 }
 
 h4 { /*project name*/
@@ -95,6 +101,22 @@ h4 { /*project name*/
 	font-size: 2em;
 	font-weight: 400;
 	padding-bottom: 20px;
+}
+
+h5 { /*featured work clientname*/
+	font-size: 1em;
+
+}
+
+h6 { /*featured work project descip*/
+	font-family: 'Raleway', sans-serif;
+	font-size: .75em;
+	font-weight: 400;
+	line-height: 1.5em;
+}
+
+ul {
+	margin-bottom: 20px;
 }
 
 li {
@@ -106,7 +128,7 @@ li {
 #logotype {
 	font-size: 1.5em;
 	letter-spacing: 5px;
-	border: 1px solid black;
+/*	border: 1px solid black;*/
 	float: left; 
 }
 
@@ -127,19 +149,6 @@ li {
 	line-height: 1.5em;
 	padding-bottom: .5em;
 }
-
-.clients {
-	width: 33%;
-	margin-bottom: 20px;
-	padding-bottom: 10px;
-	border-bottom: 1px solid;
-}
-
-/*trying to remove the padding top in the first headber, but this is not working!*/
-/*.clients:first-child {
-	background-color: black;
-	margin-top: 200px;
-}*/
 
 .message {
 	font-size: 2em;
@@ -165,12 +174,21 @@ li {
 
 .thumbsection {
 	text-align: center;
+	/*width: 24.5%;*/
+	max-width: 250px;
+	min-height: 225px;
+	display: inline-block;
+	background-color: white;
+	margin: 0 15px 20px 0px;
+	padding: 15px 0 20px 0;
 }
 
 .thumb {
-	width: 24%;
-	padding-right: 25px;
-	padding-bottom: 25px;
+	width: 100%;
+	max-width: 220px;
+	/*padding-right: 5px;*/
+	/*padding-bottom: 2%;*/
+	border: 1px solid #EEE;
 }
 
 .ptitle {
@@ -181,7 +199,7 @@ li {
 
 .pimage {
 	width: 67%;
-	float: right;	
+	float: left;	
 }
 
 .pdescrip {
@@ -201,7 +219,10 @@ li {
 	float: left;
 }
 
-.col1, .col2, .col3 { /*can i just name this class col?*/
+.clientcol {
+	width: 33.33%;
+	margin-bottom: 20px;
+	padding-right: 10px;
 	float: left;
 }
 
@@ -209,7 +230,6 @@ li {
 	display: block;
 	content: " ";
 	clear: both;
-
 	font-size: 0;
 	visibility: hidden;
 	height: 0;
