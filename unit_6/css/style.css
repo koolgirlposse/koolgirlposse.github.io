@@ -17,8 +17,8 @@ body {
 }
 
 header {
-	margin: 50px 50px;
-/*	border: 1px black solid;*/
+	margin: 50px auto;
+	/*	border: 1px black solid;*/
 }
 
 nav {
@@ -174,18 +174,16 @@ li {
 
 .thumbsection {
 	text-align: center;
-	/*width: 24.5%;*/
-	max-width: 250px;
+	width: 24%;
+	margin: .5%;
 	min-height: 225px;
-	display: inline-block;
 	background-color: white;
-	margin: 0 15px 20px 0px;
-	padding: 15px 0 20px 0;
+	padding: 1em;
+	float: left;
 }
 
 .thumb {
 	width: 100%;
-	max-width: 220px;
 	/*padding-right: 5px;*/
 	/*padding-bottom: 2%;*/
 	border: 1px solid #EEE;
@@ -225,7 +223,10 @@ li {
 	padding-right: 10px;
 	float: left;
 }
-
+.wrapper {
+    max-width: 1200px;
+    margin: auto;
+}
 .clearfix:after {
 	display: block;
 	content: " ";
